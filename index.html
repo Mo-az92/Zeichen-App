@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeichen-App</title>
+
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+
+    <!--Styling CSS-->
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+<body>
+
+    <!--Title-->
+    <div id="header">Zeichen-APP</div>
+
+    <!--Inputs-->
+    <div class="inputContainer">
+        <!--color input-->
+        <div class="input" id="colorInput">
+            <input type="color" list id="paintColor">
+        </div>
+        <!--Size-->
+        <div class="input" id="thicknessInput">
+            <div id="circle"></div>
+        </div>
+
+        <!--Slider-->
+        <div class="input">
+            <div id="slider"></div>
+        </div>
+
+    </div>
+    <!--Canvas Container-->
+    <div id="container">
+        <canvas id="paint" width="1100px" height="400px"></canvas>
+
+    </div>
+
+    <!--Buttons-->
+    <div class="inputContainer2">
+        <!--Erase-->
+        <div class="input2">
+            <span id="erase" class="button">Löschen</span>
+        </div>
+        <!--Save-->
+        <div class="input2">
+            <span id="save" class="button">Speichern</span>
+        </div>
+        <!--Reset-->
+        <div class="input2">
+            <span id="reset" class="button">Zurücksetzen</span>
+        </div>
+    </div>
+
+
+
+    <!--jQuery then jQuery UI-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
